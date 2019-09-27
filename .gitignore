@@ -65,3 +65,5 @@ xmlrpc.php
 wp-content/ai1wm-backups
 
 
+wp-content/plugins/google-analytics-dashboard-for-wp/languages/
+wp-content/plugins/header-and-footer-scripts-inserter/inc/lib/codemirror/theme/
