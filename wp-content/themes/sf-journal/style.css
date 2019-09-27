@@ -11,3 +11,120 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  sf-journal
 */
+
+body.colors-dark, .colors-dark .site-content-contain, .colors-dark .navigation-top, .colors-dark .main-navigation ul {
+    background: #000;
+}
+
+/*// settings*/
+
+.site-info {
+    display: none;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1rem 2.75rem;
+    font-size: 1rem;
+    line-height: 1;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #fff !important;
+    text-decoration: none  !important;
+    box-shadow: none !important;
+}
+
+form.cart {
+    margin-bottom: 30px;
+}
+
+button {
+    line-height: 1 !important;
+}
+
+@media screen and (min-width: 30em) {
+    .page-one-column .panel-content .wrap {
+        max-width: 1400px;
+    }
+    .wrap {
+        max-width: 1400px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .navigation-top .wrap {
+        max-width: 1400px;
+    }
+
+    .single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+    }
+}
+
+.navigation-top, .site-footer  {
+    background: #eee;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    border-top: 12px double #333;
+    color: #c00 !important;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.quote-source {
+    font-size: 16px;
+    color: #fff;
+}
+
+.entry-content p {
+    line-height: 1.75;
+}
+
+.colors-dark h3.red {
+    color: #c00;
+}
+
+.colors-dark h3.tight {
+    margin: 0 0 4px;
+}
+
+.colors-dark h3.yellow {
+    color: #fc0;
+}
+
+.white {
+    color: #fff !important;
+}
+
+#primary .entry-content {
+    float: none;
+    width: 100%;
+}
