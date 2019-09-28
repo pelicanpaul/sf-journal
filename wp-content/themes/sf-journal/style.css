@@ -35,6 +35,67 @@ h1, h2{
     padding: 0 0 0;
 }
 
+#woocommerce_products-3 > ul > li {
+    padding: 1.5em 1em;
+    margin-right: 20px;
+    float: left;
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+}
+
+.single-featured-image-header {
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #eee;
+}
+
+#woocommerce_products-3 > ul.product_list_widget {
+    display: flex;
+}
+
+#woocommerce_products-3 > ul.product_list_widget li {
+ /*   display: flex;*/
+}
+
+.woocommerce ul.product_list_widget li img{
+    float: none;
+    margin-bottom: 20px;
+}
+
+#woocommerce_products-3 > ul > li > a > span.product-title {
+     font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    color: #111;
+}
+#woocommerce_products-3 > ul > li > span.amount {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+body.archive.category #primary .entry-content {
+    float: none;
+    width: 100%;
+    display: none;
+}
+
+
+
+.site-footer .widget .product_list_widget img, .widget .product_list_widget img {
+    display: block;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 1px solid rgba(255,255,255, 0.8);
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+    padding-bottom: 4px;
+}
+
+
+
+
 .panel-content {
     position: relative;
     background-color: #ececec;
@@ -113,6 +174,17 @@ button {
     line-height: 1 !important;
 }
 
+.btn-small {
+    padding: .5rem 1.75rem;
+    font-size: .75rem;
+}
+
+.container-button-home {
+    margin: 20px 0 40px;
+    clear: both;
+    text-align: center;
+}
+
 @media screen and (min-width: 30em) {
     .page-one-column .panel-content .wrap {
         max-width: 1400px;
@@ -179,4 +251,31 @@ blockquote {
 #primary .entry-content {
     float: none;
     width: 100%;
+}
+
+.widget ul li ul {
+    padding: 0;
+    position: relative;
+    margin: 10px 0;
+}
+
+body.page-template-default.page-id-8627 #primary .entry-content {
+    float: none;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 0;
+}
+
+
+@media screen and (max-width: 820px){
+    body:not(.title-tagline-hidden) .site-branding-text {
+        padding-top: 4px;
+    }
+
+    h2 {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 24px;
+        color: #111;
+        border-bottom: 1px solid #999;
+    }
 }
