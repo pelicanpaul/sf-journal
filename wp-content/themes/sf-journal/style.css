@@ -13,13 +13,17 @@
 */
 
 @media screen and (min-width: 48em){
-    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media, .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media {
-        height: calc(30vh - 32px);
+    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media, .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media, #masthead > div.custom-header > div.custom-header-media {
+        height: calc(27vh - 30px);
     }
 
     .panel-content .wrap {
         padding-bottom: 1em;
         padding-top: 2em;
+    }
+
+    .site-branding {
+        padding: 3em 0 2em;
     }
 }
 
