@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 48em){
     .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media, .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media, #masthead > div.custom-header > div.custom-header-media {
-        height: calc(27vh - 30px);
+        height: calc(26vh - 30px);
     }
 
     .panel-content .wrap {
@@ -136,8 +136,12 @@ h2 {
     border-bottom: 1px solid #999;
 }
 
-h2.widget-title {
+h2.widget-title, h2.no-border {
     border-bottom: none;
+}
+
+h2.small {
+    font-size: 24px;
 }
 
 .btn-primary {
@@ -227,9 +231,14 @@ blockquote {
     margin-bottom: 10px;
 }
 
+blockquote p{
+    padding: 0;
+    margin: 0;
+}
+
 .quote-source {
     font-size: 16px;
-    color: #fff;
+    color: #555;
 }
 
 .entry-content p {
