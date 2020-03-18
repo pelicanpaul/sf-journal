@@ -13,10 +13,19 @@
 */
 
 @media screen and (min-width: 48em){
-    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media, .admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media, #masthead > div.custom-header > div.custom-header-media {
+    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
+    .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
+    .admin-bar.home.blog.has-header-image .custom-header-media,
+    .admin-bar.home.blog.has-header-video .custom-header-media,
+    .twentyseventeen-front-page.has-header-image .custom-header-media {
         height: calc(26vh - 30px);
     }
 
+
+    .has-sidebar:not(.error404) #primary {
+        float: left;
+        width: 59%;
+    }
     .panel-content .wrap {
         padding-bottom: 1em;
         padding-top: 2em;
@@ -24,6 +33,10 @@
 
     .site-branding {
         padding: 3em 0 2em;
+    }
+
+    .site-content {
+        padding: 40px 0 0;
     }
 }
 
@@ -34,9 +47,19 @@
     filter: opacity(0.5);
 }
 
+body.single-post .entry-header {
+    margin-top: 20px;
+}
+
 
 h1, h2{
     padding: 0 0 0;
+}
+
+/*// products*/
+
+#woocommerce_products-3 > ul.product_list_widget {
+    display: flex;
 }
 
 #woocommerce_products-3 > ul > li {
@@ -48,18 +71,6 @@ h1, h2{
     background-color: #fff;
 }
 
-.single-featured-image-header {
-    background-color: #e6e6e6;
-    border-bottom: 1px solid #eee;
-}
-
-#woocommerce_products-3 > ul.product_list_widget {
-    display: flex;
-}
-
-#woocommerce_products-3 > ul.product_list_widget li {
- /*   display: flex;*/
-}
 
 .woocommerce ul.product_list_widget li img{
     float: none;
@@ -121,13 +132,6 @@ body.has-header-image .site-description, body.has-header-video .site-description
         font-size: 36px;
     }
 }
-
-/*h1.site-title {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 48px;
-    text-transform: uppercase;
-}*/
-
 
 h2 {
     font-family: 'Abril Fatface', cursive;
@@ -231,7 +235,7 @@ blockquote {
     margin-bottom: 10px;
 }
 
-blockquote p{
+blockquote p {
     padding: 0;
     margin: 0;
 }
@@ -290,5 +294,19 @@ body.page-template-default.page-id-8627 #primary .entry-content {
         font-size: 24px;
         color: #111;
         border-bottom: 1px solid #999;
+    }
+    blockquote {
+        font-size: 20px;
+
+    }
+
+    /*// products*/
+
+    #woocommerce_products-3 > ul.product_list_widget {
+        display: block;
+    }
+
+    #woocommerce_products-3 > ul > li {
+        width: 100%;
     }
 }

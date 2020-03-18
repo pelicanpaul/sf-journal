@@ -13,6 +13,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php
+	if (  has_post_thumbnail( get_the_ID()) && is_single() ) :
+
+		$featured_url = get_the_post_thumbnail_url( get_the_ID());
+		//echo '<div class="single-featured-image-header">';
+		echo get_the_post_thumbnail( get_the_ID(), 'twentyseventeen-featured-image' );
+		//echo '</div><!-- .single-featured-image-header -->';
+	endif;
+	?>
 	<?php
 	if ( is_sticky() && is_home() ) :
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
