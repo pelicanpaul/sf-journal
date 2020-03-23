@@ -75,6 +75,7 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+	
 
 	<?php
 	if ( is_single() ) {
