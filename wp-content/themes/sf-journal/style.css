@@ -12,6 +12,12 @@
  Text Domain:  sf-journal
 */
 
+.MI-image.Fimg, .interface-mjp {
+    height: 400px !important;
+}
+
+
+
 @media screen and (min-width: 48em){
     .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
     .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
