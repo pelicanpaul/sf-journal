@@ -24,7 +24,7 @@
     .admin-bar.home.blog.has-header-image .custom-header-media,
     .admin-bar.home.blog.has-header-video .custom-header-media,
     .twentyseventeen-front-page.has-header-image .custom-header-media {
-        height: calc(26vh - 30px);
+        height: 205px;
     }
 
 
@@ -43,6 +43,52 @@
 
     .site-content {
         padding: 40px 0 0;
+    }
+
+    #top-menu {
+        width: 70%;
+
+        float: left;
+
+    }
+
+    .container-search-form-top {
+        float: left;
+        width: 30%;
+    }
+
+    .search-form-top {
+        float: right;
+        width: 250px;
+        margin-right: 10px;
+    }
+
+    #search-form-top {
+        width: 200px;
+        float: left;
+        border-radius: 0;
+        font-size: 14px;
+    }
+
+    #site-navigation > div.container-search-form-top > form > button{
+        width: 42px;
+        float: left;
+        height: 42px;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    #top-menu {
+        width: 100%;
+
+        float: left;
+
+    }
+
+    .container-search-form-top {
+        display: none;
     }
 }
 
@@ -291,6 +337,13 @@ body.page-template-default.page-id-8627 #primary .entry-content {
 
 
 @media screen and (max-width: 820px){
+
+    .has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
+        display: table;
+        height: auto;
+        width: 100%;
+    }
+
     body:not(.title-tagline-hidden) .site-branding-text {
         padding-top: 4px;
     }
